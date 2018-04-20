@@ -1,0 +1,52 @@
+/*Universal Styles*/
+header, div, nav, footer {
+  border: 1px solid black;
+  height: 50px
+}
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+}
+
+/*Header Section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0 24px;
+}
+
+header a {
+  margin-left: 16px;
+}
+
+header img {
+  height: 32px;
+  width: auto;
+}
+
+nav, header div {
+  display: flex;
+  align-items: center;
+}
+
+/*Landing Section*/
+
+/*Information Section*/
+
+/*Learing Section*/
+
+/*Thesis Section*/
+
+/*Footer Section*/
