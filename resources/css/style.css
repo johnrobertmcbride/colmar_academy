@@ -3,7 +3,7 @@ header, div, nav, footer {
   border: 1px solid black;
 }
 
-#thesis-section, footer {
+footer {
   height: 100px;
 }
 
@@ -27,8 +27,29 @@ a {
   margin-right: 24px;
 }
 
+.main img, .main video {
+  width: 100%;
+  height: auto;
+}
+
 .side {
   width: 40%;
+}
+
+.side-article {
+   padding: 16px;
+   display: flex;
+   align-items: center;
+}
+
+.side img {
+  width: 35%;
+  height: auto;
+}
+
+.main, .side {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*Header Section*/
@@ -57,35 +78,9 @@ nav, header div {
 /*Landing Section*/
 #landing-section {
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-#landing-section img {
-  height: auto;
 }
 
 /*Information Section*/
-#information-section .main, #information-section .side {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.main img {
-  width: 100%;
-  height: auto;
-}
-
-.side-article {
-   padding: 16px;
-   display: flex;
-   align-items: center;
-}
-
-.side img {
-  width: 35%;
-  height: auto;
-}
 
 /*Learing Section*/
 #learning-section {
