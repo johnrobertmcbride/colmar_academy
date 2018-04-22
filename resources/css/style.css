@@ -3,10 +3,6 @@ header, div, nav, footer {
   border: 1px solid black;
 }
 
-footer {
-  height: 100px;
-}
-
 html {
   font-size: 16px;
   font-family: Helvetica;
@@ -104,6 +100,21 @@ nav, header div {
   height: auto;
 }
 
+.course-text {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+}
+
+.bottom {
+  margin-bottom: 32px;
+}
+
 /*Thesis Section*/
 
 /*Footer Section*/
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
