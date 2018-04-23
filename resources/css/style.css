@@ -65,6 +65,10 @@ a {
   width: 40%;
 }
 
+.main-article-title, .author {
+  margin-top: 32px;
+}
+
 .side-article {
    padding: 16px;
    display: flex;
@@ -154,10 +158,6 @@ header a {
 /*Information Section*/
 #information-section .side {
   border-left: 1px solid lightgray;
-}
-
-.main-article-title, .author {
-  margin-top: 32px;
 }
 
 /*Learing Section*/
