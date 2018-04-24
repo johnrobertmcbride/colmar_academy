@@ -49,6 +49,8 @@ a {
 .section {
   display: flex;
   padding-left: 24px;
+  position: relative;
+  top: 64px;
 }
 
 .main {
@@ -123,6 +125,10 @@ header {
   align-items: center;
   height: 65px;
   padding: 0 24px;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
 }
 
 nav, header div {
