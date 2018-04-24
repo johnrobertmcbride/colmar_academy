@@ -1,11 +1,7 @@
 /*Universal Styles*/
-header, div, nav, footer {
-/*  border: 1px solid black;*/
-}
-
 html {
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -100,21 +96,23 @@ a {
   display: none;
 }
 
+@media only screen and (max-width: 900px) {
+  .side {
+    width: 45%;
+  }
+
+  .main {
+    width: 55%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
-  .desktop {
-    display: none;
+  .side {
+    width: 50%;
   }
 
-  .mobile {
-    display: block;
-  }
-
-  .main, .side {
-    width: 100%;
-  }
-
-  .section {
-    padding-left: 0;
+  .main {
+    width: 50%;
   }
 }
 
@@ -124,11 +122,13 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 65px;
-  padding: 0;
+  padding: 0 24px;
   position: fixed;
   z-index: 2;
   background-color: white;
   width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgray;
 }
 
 nav, header div {
@@ -158,12 +158,18 @@ header a {
   margin-left: 16px;
 }
 
-.left {
-  margin-left: 24px;
-}
+@media only screen and (max-width: 700px) {
+  header .desktop {
+    display: none;
+  }
 
-.right {
-  margin-right: 24px;
+  header .mobile {
+    display: block;
+  }
+
+  header .section {
+    padding-left: 0;
+  }
 }
 
 /*Landing Section*/
@@ -191,9 +197,14 @@ header a {
   background-color: hsl(0, 0%, 30%);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   #landing-section {
     flex-direction: column;
+    padding-left: 0;
+  }
+
+  #landing-section .main, #landing-section .side {
+    width: 100%;
   }
 
   #landing-section .main {
@@ -205,7 +216,6 @@ header a {
     margin-left: 16px;
     margin-right: 16px
   }
-
 }
 
 /*Information Section*/
@@ -213,9 +223,21 @@ header a {
   border-left: 1px solid lightgray;
 }
 
-@media only screen and (max-width:800px) {
-  #information-section .main {
+@media only screen and (max-width:600px) {
+  #information-section .desktop {
     display: none;
+  }
+
+  #information-section .mobile {
+    display: block;
+  }
+
+  #information-section .main, #information-section .side {
+    width: 100%;
+  }
+
+  #information-section {
+    padding-left: 0;
   }
 
   .side-article {
@@ -284,7 +306,21 @@ header a {
   margin-bottom: 32px;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 900px) {
+  #learning-section {
+    padding: 32px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #learning-section .desktop {
+    display: none;
+  }
+
+  #learning-section .mobile {
+    display: block;
+  }
+
   #learning-section {
     padding: 32px 16px;
     background-color: white;
@@ -303,6 +339,11 @@ header a {
     width: 100%;
     background-color: hsl(0, 0%, 90%);
     margin-bottom: 8px;
+    transition: background-color 0.2s linear;
+  }
+
+  .course-container:hover {
+    background-color: hsl(0, 0%, 75%);
   }
 }
 
@@ -320,9 +361,21 @@ header a {
   display: flex;
 }
 
-@media only screen and (max-width:800px) {
-  #thesis-section .side {
+@media only screen and (max-width:600px) {
+  #thesis-section .desktop {
     display: none;
+  }
+
+  #thesis-section .mobile {
+    display: block;
+  }
+
+  #thesis-section .main, #thesis-section .side {
+    width: 100%;
+  }
+
+  #thesis-section {
+    padding-left: 0;
   }
 
   #thesis-section .main {
@@ -346,9 +399,21 @@ footer a {
   margin-left: 16px;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
   footer {
     height: auto;
     padding-bottom: 16px;
+  }
+
+  footer .desktop {
+    display: none;
+  }
+
+  footer .mobile {
+    display: block;
+  }
+
+  footer .section {
+    padding-left: 0;
   }
 }
