@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
 
@@ -14,9 +15,12 @@
     <header>
       <div>
         <img src="./resources/images/ic-logo.svg">
-        <span class="logo1">Colmar</span><span class="logo2">Academy</span>
+        <span class="logo1 desktop">Colmar</span><span class="logo2 desktop">Academy</span>
       </div>
-      <nav>
+      <div class="mobile"><a href="#"><i class="fa fa-building fa-lg"></i></a></div>
+      <div class="mobile"><a href="#"><i class="fa fa-desktop fa-lg"></i></a></div>
+      <div class="mobile"><a href="#"><i class="fa fa-user fa-lg"></i></a></div>
+      <nav class="desktop">
         <span><a href="#">On campus</a></span>
         <span><a href="#">Online</a></span>
         <span><a href="#">For companies</a></span>
@@ -27,7 +31,7 @@
     <!--Landing Section-->
     <div id="landing-section" class="section">
       <div class="main">
-        <img src="./resources/images/banner.jpg">
+        <img src="./resources/images/banner.jpg" alt="Students working together at a desk">
       </div>
       <div class="side">
         <div class="text-container">
@@ -43,15 +47,15 @@
     <!--Information Section-->
     <div id="information-section" class="section">
       <div class="main">
-        <img src="./resources/images/information-main.jpg">
+        <img src="./resources/images/information-main.jpg" alt="Man reading a book outdoors">
         <h2 class="main-article-title">It doesn't hurt to keep practicing</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristque ligula."</p>
         <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <div class="side">
         <div class="side-article">
-          <img class="desktop" src="./resources/images/information-orientation.jpg">
-          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg">
+          <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Bird's eye view of students following a path">
+          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Bird's eye view of students following a path">
           <div class="side-article-text">
             <h3>Orientation date</h3>
             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -59,8 +63,8 @@
           </div>
         </div>
         <div class="side-article">
-          <img class="desktop" src="./resources/images/information-campus.jpg">
-          <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
+          <img class="desktop" src="./resources/images/information-campus.jpg" alt="A workspace on campus">
+          <img class="mobile" src="./resources/images/information-campus-mobile.jpg"  alt="A workspace on campus">
           <div class="side-article-text">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
@@ -68,8 +72,8 @@
           </div>
         </div>
         <div class="side-article">
-          <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
-          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
+          <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="A headshot of Oliver Sack">
+          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg"  alt="A headshot of Oliver Sack">
           <div  class="side-article-text-last">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -84,51 +88,51 @@
       <h2 class="center">Start learning</h2>
       <div class="allcourses-container">
         <div class="course-container bottom">
-          <img src="./resources/images/course-software.jpg">
+          <img src="./resources/images/course-software.jpg" class="desktop" alt="Desktop computer showing code">
           <div class="course-text">
             <h3>Software engineering</h3>
-            <p>COURSES</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
         <div class="course-container bottom">
-          <img src="./resources/images/course-computer-art.jpg">
+          <img src="./resources/images/course-computer-art.jpg" class="desktop" alt="Mobile phone shoing the user interface of an app">
           <div class="course-text">
             <h3>Computer art</h3>
-            <p>COURSES</p>
-            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
         <div class="course-container bottom">
-          <img src="./resources/images/course-design.jpg">
+          <img src="./resources/images/course-design.jpg" class="desktop" alt="Close up shot of photographer holding a camera">
           <div class="course-text">
             <h3>Design</h3>
-            <p>COURSES</p>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-data.jpg">
+          <img src="./resources/images/course-data.jpg" class="desktop" alt="Laptop showing graphs and visualised data">
           <div class="course-text">
             <h3>Data</h3>
-            <p>COURSES</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-business.jpg">
+          <img src="./resources/images/course-business.jpg" class="desktop" alt="A chess board with chess pieces">
           <div class="course-text">
             <h3>Business</h3>
-            <p>COURSES</p>
-            <p>Product Development, Business Development, Startup</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Product Development, Business Development, Startup</p>
           </div>
         </div>
         <div class="course-container">
-          <img src="./resources/images/course-marketing.jpg">
+          <img src="./resources/images/course-marketing.jpg" class="desktop" alt="A smart watch being used">
           <div class="course-text">
             <h3>Marketing</h3>
-            <p>COURSES</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <p class="desktop">COURSES</p>
+            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
       </div>
@@ -136,23 +140,24 @@
 
     <!--Thesis Section-->
     <div id="thesis-section" class="section">
-      <h2 class="center">Thesis</h2>
+      <h2 class="center desktop">Thesis</h2>
+      <h2 class="center mobile">Thesis exhibits</h2>
       <div class="thesis-container">
         <div class="main">
-          <video src="./resources/videos/thesis.mp4" controls></video>
-          <h3 class="main-article-title">Reimagine urban</h3>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristque ligula."</p>
+          <video src="./resources/videos/thesis.mp4" controls alt="A concept building in different natural lighting conditions"></video>
+          <h3 class="main-article-title desktop">Reimagine urban</h3>
+          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristque ligula."</p>
         </div>
         <div class="side">
           <div class="side-article">
-            <img src="./resources/images/thesis-fisma.jpg">
+            <img src="./resources/images/thesis-fisma.jpg" alt="A desk cluttered with concept drawings">
             <div>
               <h3>Fisma: Design and Prototype</h3>
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
           <div class="side-article">
-            <img src="./resources/images/thesis-now-and-then.jpg">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="New York skyline">
             <div>
               <h3>Now and then</h3>
               <p>Research study about New York</p>

@@ -270,6 +270,28 @@ header a {
   margin-bottom: 32px;
 }
 
+@media only screen and (max-width:800px) {
+  #learning-section {
+    padding: 32px 16px;
+    background-color: white;
+    border: 1px solid lightgray;
+  }
+
+  #learning-section h3 {
+    margin-bottom: 0;
+  }
+
+  .allcourses-container {
+    flex-direction: column;
+  }
+
+  .course-container {
+    width: 100%;
+    background-color: hsl(0, 0%, 90%);
+    margin-bottom: 8px;
+  }
+}
+
 /*Thesis Section*/
 #thesis-section {
   flex-direction: column;
@@ -282,6 +304,17 @@ header a {
 
 .thesis-container {
   display: flex;
+}
+
+@media only screen and (max-width:800px) {
+  #thesis-section .side {
+    display: none;
+  }
+
+  #thesis-section .main {
+    margin-right: 0;
+    padding-top: 16px;
+  }
 }
 
 /*Footer Section*/
@@ -297,4 +330,11 @@ footer {
 
 footer a {
   margin-left: 16px;
+}
+
+@media only screen and (max-width:800px) {
+  footer {
+    height: auto;
+    padding-bottom: 16px;
+  }
 }
